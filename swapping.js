@@ -58,7 +58,17 @@ CONT..
     
     THE ONE LINEAR SOLUTION
      
-       The stru
+       The strings matching the regular expression inside
+       the parenthesis can be shortly accessed by '$1' , '$2'
+       and so on.
+
+       const name = 'Joey Tribbiani';
+       const swappedName = name.replace(/(\W+)\S(\W+)/, '$2, $1');
+       console.log(swappedName); //Tribbiani, Joey
+
+       If you have any other interesting solution comment
+       below!
+       
 
 
 
