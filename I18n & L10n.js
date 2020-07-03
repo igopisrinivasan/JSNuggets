@@ -45,10 +45,40 @@ Style:
        
 
 Example:
+
+
+
+
   
-  const languagesInHindi
+  const languagesInHindi = new Intl.DisplaNames(['hi],
+  { type: 'language' });
+
+  console.log(languagesInHindi.of('ta'));
+  // expected output: translated in hindi.
+
+  In the above example, the language Tamil's display name is 
+  translated and printed in Hindi.
+  The languages display name to be translated ara=e mentioned using
+  its language code. Here 'ta' is the language code for Tamil.
 
 
+Example 
+ 
+ const regionNameInTamil = new Intl.DisplayNames(['ta'],
+ {type: 'region' });
+
+ console,log(regionNamesInTamil.of('IN'));
+ // expected output: India(in tamil)
+
+ In the above example, the region India's display name is translated
+ and printed in Tamil.
+ The regions display name tobe translated are mentioned using its
+ region code.Here 'IN' is the region code for India.
+
+ Type:
+
+  Default Type is Language. Possible values are,
+  language ,region, script, currency
 
 
 
