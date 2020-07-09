@@ -18,7 +18,35 @@ POLYMORPHISM
   compiled language. So method overloading is not
   posisible  
 
-  .
+. But Dynamic (run-time) polymorphism is the 
+  polymorphism exited at run-time. So method 
+  overriding is possible.
+
+EXAMPLE 
+
+class JsNuggets {
+  displayContent() {
+    console .log('Content posted');
+  }
+}
+class Instagram extends JsNuggets {
+  displayContent() {
+    console.log('Content posted on Instagram');
+  }
+}
+class Whatsapp extends JsNuggets {
+  displayContent() {
+    console.log('Content posted in Whatsapp');
+  }
+}
+const obj = [new Instagram(), new Whatsapp()];
+obj.forEachfunction (msg) {
+  msg.displayContent();
+});
+
+output:
+// Content posted in Instagram
+// Content posted in Whatsapp
 
 
 
